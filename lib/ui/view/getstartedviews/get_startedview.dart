@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stylelogic/ui/view/mainpageview/main_pageview.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,7 +24,10 @@ class GetStartedPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              SafeArea(child: Image.asset('images/stylelogicLogo1.png')),
+              Container(
+                margin: const EdgeInsets.only(top: 10),
+                  child: SafeArea(
+                      child: Image.asset('images/stylelogicLogo1.png'))),
               Expanded(
                 child: Stack(
                   children: <Widget>[
@@ -36,12 +40,17 @@ class GetStartedPage extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 30.0),
+                    Container(
+                      margin: const EdgeInsets.only(bottom: 40),
                       child: Align(
                         alignment: Alignment.bottomCenter,
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (BuildContext context) {
+                              return const StyleLogicMain();
+                            }));
+                          },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.white.withOpacity(0.5),
                             foregroundColor: Colors.black,
