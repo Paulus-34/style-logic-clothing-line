@@ -96,14 +96,19 @@ class StyleLogicMain extends StatelessWidget {
                 child: TextField(
                   textAlign: TextAlign.justify,
                   decoration: InputDecoration(
-                    prefixIcon: const Icon(Icons.search),
-                    hintText: 'Search product, clothes',
-                    enabledBorder: OutlineInputBorder(
-                      borderSide:
-                          const BorderSide(width: 1, color: Colors.black),
-                      borderRadius: BorderRadius.circular(50.0),
-                    ),
-                  ),
+                      prefixIcon: const Icon(Icons.search),
+                      hintText: 'Search product, clothes',
+                      focusedBorder: OutlineInputBorder(
+                        borderSide:
+                            const BorderSide(width: 1, color: Colors.black),
+                        borderRadius: BorderRadius.circular(50.0),
+                        
+                      ),
+                      border: OutlineInputBorder(
+                        borderSide:
+                            const BorderSide(width: 1, color: Colors.black),
+                        borderRadius: BorderRadius.circular(50.0),
+                      )),
                 ),
               ),
               Container(
@@ -196,7 +201,7 @@ class StyleLogicMain extends StatelessWidget {
                               const Padding(padding: EdgeInsets.only(top: 10)),
                               AspectRatio(
                                 aspectRatio: 18.0 / 12.0,
-                                child: Image.asset('images/prodimg1.png'),
+                                child: Image.asset('images/prodimg2.png'),
                               ),
                               Expanded(
                                 child: Padding(
@@ -215,7 +220,7 @@ class StyleLogicMain extends StatelessWidget {
                                         height: 1,
                                       ),
                                       Text(
-                                        'Wool Lapelles Jacket',
+                                        'Wool Beige Suit Pant',
                                         style: TextStyle(
                                           fontSize: 10,
                                           fontWeight: FontWeight.w400,
@@ -225,7 +230,7 @@ class StyleLogicMain extends StatelessWidget {
                                         height: 1,
                                       ),
                                       Text(
-                                        '₱‌101,100.00',
+                                        '₱56,700.00',
                                         style: TextStyle(
                                           fontSize: 10,
                                           fontWeight: FontWeight.w400,
@@ -246,7 +251,7 @@ class StyleLogicMain extends StatelessWidget {
                               const Padding(padding: EdgeInsets.only(top: 10)),
                               AspectRatio(
                                 aspectRatio: 18.0 / 12.0,
-                                child: Image.asset('images/prodimg1.png'),
+                                child: Image.asset('images/prodimg3.png'),
                               ),
                               Expanded(
                                 child: Padding(
@@ -265,7 +270,7 @@ class StyleLogicMain extends StatelessWidget {
                                         height: 1,
                                       ),
                                       Text(
-                                        'Wool Lapelles Jacket',
+                                        'Wool Mohair Lapelless Jacket',
                                         style: TextStyle(
                                           fontSize: 10,
                                           fontWeight: FontWeight.w400,
@@ -275,7 +280,7 @@ class StyleLogicMain extends StatelessWidget {
                                         height: 1,
                                       ),
                                       Text(
-                                        '₱‌101,100.00',
+                                        '₱124,000.00',
                                         style: TextStyle(
                                           fontSize: 10,
                                           fontWeight: FontWeight.w400,
@@ -296,7 +301,7 @@ class StyleLogicMain extends StatelessWidget {
                               const Padding(padding: EdgeInsets.only(top: 10)),
                               AspectRatio(
                                 aspectRatio: 18.0 / 12.0,
-                                child: Image.asset('images/prodimg1.png'),
+                                child: Image.asset('images/prodimg4.png'),
                               ),
                               Expanded(
                                 child: Padding(
@@ -315,7 +320,7 @@ class StyleLogicMain extends StatelessWidget {
                                         height: 1,
                                       ),
                                       Text(
-                                        'Wool Lapelles Jacket',
+                                        'Wool Black Suit Pant',
                                         style: TextStyle(
                                           fontSize: 10,
                                           fontWeight: FontWeight.w400,
@@ -325,7 +330,7 @@ class StyleLogicMain extends StatelessWidget {
                                         height: 1,
                                       ),
                                       Text(
-                                        '₱‌101,100.00',
+                                        '₱56,700.00',
                                         style: TextStyle(
                                           fontSize: 10,
                                           fontWeight: FontWeight.w400,
@@ -346,7 +351,7 @@ class StyleLogicMain extends StatelessWidget {
                               const Padding(padding: EdgeInsets.only(top: 10)),
                               AspectRatio(
                                 aspectRatio: 18.0 / 12.0,
-                                child: Image.asset('images/prodimg1.png'),
+                                child: Image.asset('images/prodimg5.png'),
                               ),
                               Expanded(
                                 child: Padding(
@@ -365,7 +370,7 @@ class StyleLogicMain extends StatelessWidget {
                                         height: 1,
                                       ),
                                       Text(
-                                        'Wool Lapelles Jacket',
+                                        'Cotton Hat',
                                         style: TextStyle(
                                           fontSize: 10,
                                           fontWeight: FontWeight.w400,
@@ -375,7 +380,7 @@ class StyleLogicMain extends StatelessWidget {
                                         height: 1,
                                       ),
                                       Text(
-                                        '₱‌101,100.00',
+                                        '₱29,600.00',
                                         style: TextStyle(
                                           fontSize: 10,
                                           fontWeight: FontWeight.w400,
@@ -396,7 +401,7 @@ class StyleLogicMain extends StatelessWidget {
                               const Padding(padding: EdgeInsets.only(top: 10)),
                               AspectRatio(
                                 aspectRatio: 18.0 / 12.0,
-                                child: Image.asset('images/prodimg1.png'),
+                                child: Image.asset('images/prodimg6.png'),
                               ),
                               Expanded(
                                 child: Padding(
@@ -415,7 +420,7 @@ class StyleLogicMain extends StatelessWidget {
                                         height: 1,
                                       ),
                                       Text(
-                                        'Wool Lapelles Jacket',
+                                        'Cotton Hat',
                                         style: TextStyle(
                                           fontSize: 10,
                                           fontWeight: FontWeight.w400,
@@ -425,7 +430,7 @@ class StyleLogicMain extends StatelessWidget {
                                         height: 1,
                                       ),
                                       Text(
-                                        '₱‌101,100.00',
+                                        '₱‌29,600.00',
                                         style: TextStyle(
                                           fontSize: 10,
                                           fontWeight: FontWeight.w400,
