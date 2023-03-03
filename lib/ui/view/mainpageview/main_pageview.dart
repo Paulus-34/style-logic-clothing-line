@@ -53,6 +53,25 @@ class StyleLogicMain extends StatelessWidget {
           )
         ],
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.white,
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Text('Home'),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Text('Shop All'),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Text('Essentials'),
+            label: '',
+          ),
+        ],
+      ),
       body: SingleChildScrollView(
         child: Center(
           child: Column(
@@ -133,7 +152,8 @@ class StyleLogicMain extends StatelessWidget {
                                 child: Padding(
                                   padding: const EdgeInsets.all(10.0),
                                   child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: const <Widget>[
                                       Text(
                                         'STYLE LOGIC',
@@ -182,7 +202,8 @@ class StyleLogicMain extends StatelessWidget {
                                 child: Padding(
                                   padding: const EdgeInsets.all(10.0),
                                   child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: const <Widget>[
                                       Text(
                                         'STYLE LOGIC',
@@ -231,57 +252,8 @@ class StyleLogicMain extends StatelessWidget {
                                 child: Padding(
                                   padding: const EdgeInsets.all(10.0),
                                   child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: const <Widget>[
-                                      Text(
-                                        'STYLE LOGIC',
-                                        style: TextStyle(
-                                          fontSize: 8,
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        height: 1,
-                                      ),
-                                      Text(
-                                        'Wool Lapelles Jacket',
-                                        style: TextStyle(
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.w400,
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        height: 1,
-                                      ),
-                                      Text(
-                                        '₱‌101,100.00',
-                                        style: TextStyle(
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.w400,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                        Card(
-                          clipBehavior: Clip.antiAlias,
-                          child: Column(
-                            
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              const Padding(padding: EdgeInsets.only(top: 10)),
-                              AspectRatio(
-                                aspectRatio: 18.0 / 12.0,
-                                child: Image.asset('images/prodimg1.png'),
-                              ),
-                              Expanded(
-                                child: Padding(
-                                  padding: const EdgeInsets.all(10.0),
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: const <Widget>[
                                       Text(
                                         'STYLE LOGIC',
@@ -330,7 +302,8 @@ class StyleLogicMain extends StatelessWidget {
                                 child: Padding(
                                   padding: const EdgeInsets.all(10.0),
                                   child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: const <Widget>[
                                       Text(
                                         'STYLE LOGIC',
@@ -379,7 +352,58 @@ class StyleLogicMain extends StatelessWidget {
                                 child: Padding(
                                   padding: const EdgeInsets.all(10.0),
                                   child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: const <Widget>[
+                                      Text(
+                                        'STYLE LOGIC',
+                                        style: TextStyle(
+                                          fontSize: 8,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 1,
+                                      ),
+                                      Text(
+                                        'Wool Lapelles Jacket',
+                                        style: TextStyle(
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 1,
+                                      ),
+                                      Text(
+                                        '₱‌101,100.00',
+                                        style: TextStyle(
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Card(
+                          clipBehavior: Clip.antiAlias,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              const Padding(padding: EdgeInsets.only(top: 10)),
+                              AspectRatio(
+                                aspectRatio: 18.0 / 12.0,
+                                child: Image.asset('images/prodimg1.png'),
+                              ),
+                              Expanded(
+                                child: Padding(
+                                  padding: const EdgeInsets.all(10.0),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: const <Widget>[
                                       Text(
                                         'STYLE LOGIC',
@@ -419,9 +443,31 @@ class StyleLogicMain extends StatelessWidget {
                   ],
                 ),
               ),
-              Container(
-                margin: const EdgeInsets.fromLTRB(0, 11, 0, 20),
-                child: Image.asset('images/HomepageImage2.png'),
+              Stack(
+                children: [
+                  Center(
+                    child: Image.asset(
+                      'images/HomepageImage2.png',
+                    ),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.all(50),
+                    child: Align(
+                      alignment: Alignment.center,
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.white.withOpacity(0.5),
+                          foregroundColor: Colors.black,
+                          minimumSize: const Size(105, 32),
+                          side: const BorderSide(color: Colors.black, width: 1),
+                          shape: const StadiumBorder(),
+                        ),
+                        child: const Text('Shop All'),
+                      ),
+                    ),
+                  )
+                ],
               ),
             ],
           ),
