@@ -89,7 +89,9 @@ class StyleLogicMain extends StatelessWidget {
               ),
               Container(
                 margin: const EdgeInsets.fromLTRB(0, 11, 0, 20),
-                child: Image.asset('images/HomepageImage1.png'),
+                child: Image.asset(
+                  'images/HomepageImage1.png',
+                ),
               ),
               Container(
                 padding: const EdgeInsets.fromLTRB(25, 0, 25, 0),
@@ -98,15 +100,329 @@ class StyleLogicMain extends StatelessWidget {
                   children: const [
                     Text(
                       'February Collection',
-                      style: TextStyle(
-                        fontWeight: FontWeight.w400,
-                      fontSize: 15),
+                      style:
+                          TextStyle(fontWeight: FontWeight.w400, fontSize: 15),
                     ),
                     Icon(Icons.east)
                   ],
                 ),
               ),
-              Container()
+              Container(
+                margin: const EdgeInsets.fromLTRB(5, 10, 5, 0),
+                child: Stack(
+                  children: [
+                    GridView.count(
+                      physics: const ScrollPhysics(),
+                      shrinkWrap: true,
+                      crossAxisCount: 2,
+                      padding: const EdgeInsets.fromLTRB(15.0, 0, 15.0, 12.0),
+                      childAspectRatio: .9,
+                      crossAxisSpacing: 10.0,
+                      mainAxisSpacing: 10.0,
+                      children: <Widget>[
+                        Card(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              const Padding(padding: EdgeInsets.only(top: 10)),
+                              AspectRatio(
+                                aspectRatio: 18.0 / 12.0,
+                                child: Image.asset('images/prodimg1.png'),
+                              ),
+                              Expanded(
+                                child: Padding(
+                                  padding: const EdgeInsets.all(10.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: const <Widget>[
+                                      Text(
+                                        'STYLE LOGIC',
+                                        style: TextStyle(
+                                          fontSize: 8,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 1,
+                                      ),
+                                      Text(
+                                        'Wool Lapelles Jacket',
+                                        style: TextStyle(
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 1,
+                                      ),
+                                      Text(
+                                        '₱‌101,100.00',
+                                        style: TextStyle(
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Card(
+                          clipBehavior: Clip.antiAlias,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              const Padding(padding: EdgeInsets.only(top: 10)),
+                              AspectRatio(
+                                aspectRatio: 18.0 / 12.0,
+                                child: Image.asset('images/prodimg1.png'),
+                              ),
+                              Expanded(
+                                child: Padding(
+                                  padding: const EdgeInsets.all(10.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: const <Widget>[
+                                      Text(
+                                        'STYLE LOGIC',
+                                        style: TextStyle(
+                                          fontSize: 8,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 1,
+                                      ),
+                                      Text(
+                                        'Wool Lapelles Jacket',
+                                        style: TextStyle(
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 1,
+                                      ),
+                                      Text(
+                                        '₱‌101,100.00',
+                                        style: TextStyle(
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Card(
+                          clipBehavior: Clip.antiAlias,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              const Padding(padding: EdgeInsets.only(top: 10)),
+                              AspectRatio(
+                                aspectRatio: 18.0 / 12.0,
+                                child: Image.asset('images/prodimg1.png'),
+                              ),
+                              Expanded(
+                                child: Padding(
+                                  padding: const EdgeInsets.all(10.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: const <Widget>[
+                                      Text(
+                                        'STYLE LOGIC',
+                                        style: TextStyle(
+                                          fontSize: 8,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 1,
+                                      ),
+                                      Text(
+                                        'Wool Lapelles Jacket',
+                                        style: TextStyle(
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 1,
+                                      ),
+                                      Text(
+                                        '₱‌101,100.00',
+                                        style: TextStyle(
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Card(
+                          clipBehavior: Clip.antiAlias,
+                          child: Column(
+                            
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              const Padding(padding: EdgeInsets.only(top: 10)),
+                              AspectRatio(
+                                aspectRatio: 18.0 / 12.0,
+                                child: Image.asset('images/prodimg1.png'),
+                              ),
+                              Expanded(
+                                child: Padding(
+                                  padding: const EdgeInsets.all(10.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: const <Widget>[
+                                      Text(
+                                        'STYLE LOGIC',
+                                        style: TextStyle(
+                                          fontSize: 8,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 1,
+                                      ),
+                                      Text(
+                                        'Wool Lapelles Jacket',
+                                        style: TextStyle(
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 1,
+                                      ),
+                                      Text(
+                                        '₱‌101,100.00',
+                                        style: TextStyle(
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Card(
+                          clipBehavior: Clip.antiAlias,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              const Padding(padding: EdgeInsets.only(top: 10)),
+                              AspectRatio(
+                                aspectRatio: 18.0 / 12.0,
+                                child: Image.asset('images/prodimg1.png'),
+                              ),
+                              Expanded(
+                                child: Padding(
+                                  padding: const EdgeInsets.all(10.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: const <Widget>[
+                                      Text(
+                                        'STYLE LOGIC',
+                                        style: TextStyle(
+                                          fontSize: 8,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 1,
+                                      ),
+                                      Text(
+                                        'Wool Lapelles Jacket',
+                                        style: TextStyle(
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 1,
+                                      ),
+                                      Text(
+                                        '₱‌101,100.00',
+                                        style: TextStyle(
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Card(
+                          clipBehavior: Clip.antiAlias,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              const Padding(padding: EdgeInsets.only(top: 10)),
+                              AspectRatio(
+                                aspectRatio: 18.0 / 12.0,
+                                child: Image.asset('images/prodimg1.png'),
+                              ),
+                              Expanded(
+                                child: Padding(
+                                  padding: const EdgeInsets.all(10.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: const <Widget>[
+                                      Text(
+                                        'STYLE LOGIC',
+                                        style: TextStyle(
+                                          fontSize: 8,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 1,
+                                      ),
+                                      Text(
+                                        'Wool Lapelles Jacket',
+                                        style: TextStyle(
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 1,
+                                      ),
+                                      Text(
+                                        '₱‌101,100.00',
+                                        style: TextStyle(
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                margin: const EdgeInsets.fromLTRB(0, 11, 0, 20),
+                child: Image.asset('images/HomepageImage2.png'),
+              ),
             ],
           ),
         ),
